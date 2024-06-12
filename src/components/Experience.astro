@@ -1,0 +1,22 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Marzo 2024 y mejorando",
+    title: "Creador de Mealmate",
+    company: "Mealmate",
+    description: "Es una aplicación que genera comidas a través de una IA con los ingredientes que tenemos en casa, ademas de hacer un seguimiento de la dieta y las calorias totalmente pesonalizado. Actualmente trabajando en mejoras para agregar más funciones y que sea responsive.",
+    link: "https://www.mealmateorg.me/",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

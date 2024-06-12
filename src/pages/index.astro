@@ -1,0 +1,53 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import SocialPill from '../components/SocialPill.astro';
+import GithubIcon from '../components/icons/Github.astro';
+import MailIcon from '../components/icons/Mail.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
+import Code from '../components/icons/Code.astro';
+import Projects from '../components/Projects.astro';
+---
+
+<Layout title="Porfolio de Augusto Zabala - Desarrollador y Programador Web Fullstack"
+description='Contrata a Augusto Zabala para crear tu aplicacion web.'>
+	<main class="px-4">
+    <SectionContainer id="top" class="py-4 pb-20">
+      <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+        Hey, soy Augusto<a href="https://www.linkedin.com/in/augusto-zabala-0007b81b4/" target="_blank" rel="noopener" class="flex justify-center items-center"><Badge>Disponible</Badge></a></h1>
+      <h2 class="text-xl lg:text-2xl opacity-70 text-wrap max-w-[700px]">+1 año de experiencia. Desarrollador Web.<span class="text-blue-200/95"> De Mendoza, Argentina.</span> Especializado en crear sitios webs unicos.
+      </h2>
+      <nav class="flex gap-4 mt-8 flex-wrap">
+          <SocialPill href="https://www.linkedin.com/in/augusto-zabala-0007b81b4/">
+            <LinkedInIcon class="w-6 h-6"/>
+            LinkedIn
+          </SocialPill>
+          <SocialPill href="https://github.com/AZabalaZ">
+            <GithubIcon class="w-6 h-6"/>
+            Github
+          </SocialPill>
+          <SocialPill href="mailto:augustozab27@gmail.com">
+            <MailIcon class="w-6 h-6"/>
+            augustozab27@gmail.com
+          </SocialPill>
+      </nav>
+    </SectionContainer>
+
+  <SectionContainer id="experiencia">
+    <h2 class="text-3xl font-semibold mb-6">Experiencia</h2>
+      <Experience>
+
+      </Experience>
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h2 class="text-3xl font-semibold mb-6">
+        <Code />
+        Proyectos</h2>
+        <Projects />
+      </SectionContainer>
+	</main>
+</Layout>
